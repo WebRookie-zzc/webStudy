@@ -1,0 +1,155 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+body,html {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: #f0f0f0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+i {
+    font-style: unset;
+}
+
+#allWrap {
+    width : 600px;
+    /* border : 2px solid #000; */
+    margin : 50px auto;
+    /* overflow: hidden; */
+}
+
+.front {
+    display: block;
+    transition: .2s;
+}
+
+.front-item img {
+    width : 200px;
+    height : 130px;
+}
+
+.front-item {
+    display: inline-block;
+}
+
+.front-list {
+    font-size : 0;
+    position: relative;
+}
+
+.front-item {
+    cursor : zoom-in;
+}
+
+span {
+    font-size : 30px;
+    font-family: "楷体";
+    font-weight : bold;
+}
+
+.number {
+    font-size : 70px;
+    text-align : center;
+    width : 200px;
+    height : 130px;
+    position : absolute;
+    right : 0;
+    /* vertical-align: middle; */
+    line-height : 130px;
+    color : #fff;
+    background-color: rgba(255, 255, 255, .5);;
+    font-family: "楷体";
+}
+
+.behind {
+    display: none;
+}
+
+.bigImg img{
+    width : 600px;
+    cursor: zoom-out;
+    transition: .5s;
+    /* opacity: 0; */
+}
+
+.behind-list {
+    display: inline-block;
+    font-size : 0;
+    width : 1040px;
+    transition: .5s;
+}
+
+.behind-item img {
+    width : 100px;
+    height : 55px;
+    border : 2px solid #fff;
+    cursor: pointer;
+}
+
+i {
+    width : 10px;
+    height : 55px;
+    background-color: #fff;
+    display: block;
+    position : absolute;
+    line-height: 55px;
+    cursor: pointer;
+}
+
+.behind-bottom {
+    position : relative;
+}
+
+i.left{
+    left : 0;
+}
+
+i.right {
+    right : 0;
+}
+
+i:hover {
+    background-color: #ccc;
+}
+
+.ul-list {
+    position : absolute;
+    width : 580px;
+    left : 10px;
+    overflow: hidden;
+}
+
+
+#allWrap .active,
+.behind-item img:hover {
+    border : 2px solid #f40;
+}
+
+span {
+    text-align : center;
+}
+
+del {
+    color : #cdcdcd;
+}
+
+#allWrap {
+    text-align : center;
+}

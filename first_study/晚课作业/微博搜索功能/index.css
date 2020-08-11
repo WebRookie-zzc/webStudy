@@ -1,0 +1,117 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+li {
+    list-style: none;
+    padding : 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 1975382 */
+    src: url('https://at.alicdn.com/t/font_1975382_o1l1o2bv059.eot');
+    src: url('https://at.alicdn.com/t/font_1975382_o1l1o2bv059.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_1975382_o1l1o2bv059.woff2') format('woff2'),
+    url('https://at.alicdn.com/t/font_1975382_o1l1o2bv059.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_1975382_o1l1o2bv059.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_1975382_o1l1o2bv059.svg#iconfont') format('svg');
+}
+
+.ic {
+    font-family: 'iconfont';
+}
+
+.wrapper {
+    margin : 50px auto;
+    width : 400px;
+    position: relative;
+}
+
+.search-box {
+    width : 100%;
+    height : 28px;
+    position : relative;
+}
+
+input {
+    height: 100%;
+    width : 100%;
+    padding-left : 10px;
+    outline : none;
+    border : 2px solid #ddd;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color : #f40;
+}
+
+.search-btn {
+    width : 28px;
+    height : 28px;
+    position : absolute;
+    right : 0;
+    top: 0;
+    line-height : 28px;
+}
+
+div.slideDown {
+    position : absolute;
+    top : 28px;
+    left : 0;
+    box-sizing: border-box;
+    border : 2px solid #ddd;
+    border-top : 0;
+    width : 100%;
+}
+
+li {
+    font-size : 13px;
+    cursor: pointer;
+}
+
+li:hover{
+    background-color: #eee;
+}
+
+ul.query li:nth-child(n+2):hover{
+    color : #f40;
+}
+
+span.val {
+    color : #f40;
+}
+
+.user{
+    width : 100%;
+}
+
+.user img {
+    width : 50px;
+    height : 50px;
+}
+
+.u_name {
+    position : relative;
+    top : -30px;
+    left : 10px;
+}
+
+.fun,
+.sex{
+    position: relative;
+    left : -45px;
+}
+
+.male {
+    color : skyblue;
+}
+
+.famale {
+    color : pink;
+}

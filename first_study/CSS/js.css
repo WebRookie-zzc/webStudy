@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display : block;
+    width : 100px;
+    height : 100px;
+    font-size : 30px;
+    line-height: 100px;
+    background-color: #f40;
+    text-align : center;
+    text-decoration: none;
+    font-family: "楷体";
+    position: absolute;
+}

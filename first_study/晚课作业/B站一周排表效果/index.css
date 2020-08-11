@@ -1,0 +1,135 @@
+* {
+    padding : 0;
+    margin: 0;
+}
+
+body {
+    background-color: #00a1d6;
+}
+
+::selection {
+    background-color: #f40;
+    color : #000;
+}
+
+ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+.wrapper {
+    border : 1px solid #000;
+    width : 900px;
+    height: 450px;
+    margin : 10px auto;
+    /* background-color: rgba(251); */
+    background-color: #fff;
+}
+
+.head {
+    width : 100%;
+    height: 50px;
+    position: relative;
+}
+
+.logo {
+    width : 50px;
+    height: 50px;
+}
+
+.fanjv {
+    vertical-align: 16px;
+    font-size : 20px;
+    font-weight: bold;
+}
+
+.week {
+    position : absolute;
+    top : 12px;
+    left : 130px;
+}
+
+.week li {
+    font-size: 14px;
+    line-height: 30px;
+    height: 30px;
+    margin-right: 24px;
+    cursor: pointer;
+    text-align : center;
+    padding : 0 7px;
+    font-weight: 900;
+}
+
+.week li:hover {
+    color : #00a1d6;
+}
+
+.active {
+    border-bottom: 1px solid #00a1d6;
+    color : #00a1d6
+}
+
+.btn {
+    float: right;
+    width : 112px;
+    height: 30px;
+    border : 2px solid #00a1d6;
+    color : #00a1d6;
+    font-size : 14px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align : center;
+    margin : 10px 20px 0 0;
+    transition : .7s;
+    cursor : pointer;
+}
+
+.btn:hover {
+    background-color: #00a1d6;
+    color : #fff;
+}
+
+.main {
+    height: 400px;
+    width : 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.anime {
+    width : 280px;
+    height : 90px;
+    display: inline-block;
+    margin : 5px;
+    position : relative
+}
+
+.anime p {
+    position : absolute;
+    left : 100px;
+    top : 10px;
+    font-size : 14px;
+    font-weight: bold;
+    cursor : pointer;
+    transition : .3s;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.anime p:hover {
+    color : #00a1d6;
+}
+
+.anime .num {
+    color : #00a1d6;
+    font-size : 12px;
+    position : relative;
+    left : 8px;
+    font-weight: bold;
+}
+
+/* .sheet {
+    transition : .7s;
+} */

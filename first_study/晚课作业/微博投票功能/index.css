@@ -1,0 +1,110 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+html,body {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center;*/
+} 
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    margin : 50px auto;
+}
+
+.vote {
+    background-color: #efefef;
+}
+
+ul {
+    list-style: none;
+}
+
+.vote {
+    padding : 10px 16px;
+    width : 469px;
+}
+
+.vote-desc {
+    font-size : 14px;
+}
+
+.item {
+    background-color: #fff;
+    margin : 10px 0;
+    padding : 7px 20px;
+    font-size : 12px;
+    cursor: pointer;
+    border : 2px solid #ccc;
+    text-align: center;
+}
+
+.item:hover {
+    border-color: #ffab80;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    font-size : 14px;
+}
+
+.line div {
+    display: inline-block;
+}
+
+.after {
+    text-align : left;
+    position : relative;
+    /* display: flex;
+    justify-content: space-between; */
+    /* background-image: linear-gradient(to right,#ddd 0%, #eee 30%); */
+}
+
+.after div {
+    float: left;
+    /* position: relative; */
+}
+
+.bg {
+    background-color:rgba(100, 100, 100, .5);
+    /* width : 30%; */
+    position : absolute;
+    top : 0;
+    left : 0;
+    height : 100%;
+    z-index : 1;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear : both;
+}
+
+.name {
+    z-index: 1;
+}
+
+div.voted-num {
+    float: right;
+}
+
+.active {
+    border-color : #ffab80;
+}
+
+.active .bg{
+    background-color: rgba(200, 0, 0, .5);
+}
+
+li {
+    list-style-type: none;
+}

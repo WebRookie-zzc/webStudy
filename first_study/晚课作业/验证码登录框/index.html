@@ -1,0 +1,34 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>验证码登录框</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./index.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="wrapper">
+            <div class="input">
+                <input type="text" placeholder="请输入验证码">
+                <span class="judge iconfont wrong">&#xe629;</span>
+                <span class="judge iconfont right">&#xe628;</span>
+            </div>
+            <p class="error">您输入的验证码不正确，请重新输入</p>
+            <div class="canvas">
+                <canvas id='code' width="200" height="50"></canvas>
+                <span class="fresh iconfont" title="刷新">&#xe61f;</span>
+            </div>
+            <span class="submit">提交</span>
+        </div>
+        <script src="../../JS/jQuery/jquery-3.5.1.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1975382 */
+    src: url('http://at.alicdn.com/t/font_1975382_1ei8z2hrrdz.eot');
+    src: url('http://at.alicdn.com/t/font_1975382_1ei8z2hrrdz.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_1975382_1ei8z2hrrdz.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_1975382_1ei8z2hrrdz.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_1975382_1ei8z2hrrdz.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_1975382_1ei8z2hrrdz.svg#iconfont') format('svg');
+  }
+
+i {
+    font-family: 'iconfont';
+}
+
+* {
+    padding: 0;
+    margin : 0;
+}
+
+.blocks {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100%;
+    background-color: #151413;
+    color : #fff;
+    font-family: "楷体";
+}
+
+.blocks .item {
+    width : 25%;
+    height: 100%;
+    /* display: inline-block; */
+    float: left;
+    position : relative;
+    cursor : pointer;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.blocks h2 {
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blocks .item .bg{
+    position : absolute;
+    left : 0;
+    top : 0;
+    width : 100%;
+    height : 100%;
+    opacity: 0;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-position: center;
+    transition: .8s;
+}
+
+.blocks .item:nth-child(1) .bg {
+    background-image: url(./imgs/1.jpg);
+}
+
+.blocks .item:nth-child(2) .bg {
+    background-image: url(./imgs/2.jpg);
+}
+
+.blocks .item:nth-child(3) .bg {
+    background-image: url(./imgs/3.jpg);
+}
+
+.blocks .item:nth-child(4) .bg {
+    background-image: url(./imgs/4.jpg);
+}
+
+.blocks .item:hover .bg,
+.blocks .item .bg.active{
+    opacity: .3;
+    background-size : 110% auto;
+}
+
+i {
+    font-style: normal;
+    font-size : 1.5em;
+    position : absolute;
+    right : 20px;
+    top : 10px;
+    color : #fff;
+    /* background-color:red; */
+    transition : .5s;
+    cursor: pointer;
+    display: none;
+}
+
+i:hover {
+    font-size : 1.7em;
+    color : #f40;
+}
+
+.dis {
+    display: none;
+    margin-top : 100vh;
+}

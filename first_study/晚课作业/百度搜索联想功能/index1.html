@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .block{
+            width: 600px;
+            height: 35px;
+            border: 1px solid black;
+            margin: 200px auto;
+            position: relative;
+        }
+        .res{
+            width: 500px;
+            height: 35px;
+            float: left;
+            outline: none;
+            border-style: none;
+            box-sizing: border-box;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+        .btn{
+            display: block;
+            width: 100px;
+            height: 35px;
+            background-color: #6d8eff;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+            float: left;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: #6a75ff;
+        }
+        .menu{
+            margin: 0;
+            padding: 0;
+            border: 1px solid silver;
+            width: 500px;
+            margin-left: -1px;
+        }
+        .menu>li {
+            list-style: none;
+            line-height: 30px;
+            font-size: 14px;
+            cursor: pointer;
+            padding-left: 10px;
+        }
+        .menu>li>a{
+            text-decoration: none;
+            color: #000000;
+        }
+        .menu>li:hover{
+            background-color: #eaeaea;
+        }
+ 
+    </style>
+</head>
+<body>
+<div class="block">
+    <input class="res" type="text">
+    <span class="btn">百度一下</span>
+</div>
+<script>
+    var result=document.getElementsByClassName("res")[0];
+    var block=document.getElementsByClassName("block")[0];
+    var btn=document.getElementsByClassName("btn")[0];
+    result.onkeyup=function(e){
+        var value=this.value;
+        var sc=document.createElement("script");
+        //百度API接口  &cb=showData为回调函数   value是用户输入的值
+        sc.src="https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd="+value+"&cb=showData";
+        document.body.appendChild(sc);
+        sc.remove();//remove() 方法用于从下拉列表删除选项。
+    };
+    function showData(data){
+        console.log(data);
+        var menu=document.getElementsByClassName("menu")[0];
+        if(menu){
+            menu.remove();
+        }
+        var ul=document.createElement("ul");
+        ul.className="menu";
+        for(var i=0;i<data.s.length;i++){
+            var li=document.createElement("li");
+            li.innerHTML="<a href='https://www.baidu.com/s?wd="+data.s[i]+"'>"+data.s[i]+"</a>";
+            ul.appendChild(li);
+        }
+        block.appendChild(ul);
+        btn.onclick=function (){
+            location.href="https://www.baidu.com/s?wd="+result.value;
+        }
+    }
+ 
+</script>
+</body>
+</html>

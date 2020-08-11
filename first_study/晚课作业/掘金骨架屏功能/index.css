@@ -1,0 +1,123 @@
+* {
+    margin : 0;
+    padding :0;
+}
+
+body {
+    background-color: #ddd;
+}
+
+.wrapper {
+    width : 800px;
+    height : 150px;
+    background-color: #fff;
+    margin : 200px auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #ccc;
+}
+
+.line {
+    position : absolute;
+    width : 700px;
+    background-color: #eee;
+    height : 24px;
+    margin : 13px 50px 13px 50px;
+    background-image: linear-gradient(to right, #ddd 0%, #fff 15%, #ddd 30%);
+    background-position-x: -92px;
+    animation: run 1s infinite linear;
+}
+
+.lineTwo {
+    top : 50px; 
+}
+
+.lineThree {
+    top : 100px;
+}
+
+.lineOne::after {
+    content: '';
+    display: block;
+    width : 50%;
+    height : 100%;
+    position : absolute;
+    right : 0;
+    background-color:#fff;
+}
+
+@keyframes run {
+    from{
+        background-position-x: -92px;
+    }
+    to{
+        background-position-x: 577px;
+    }
+}
+
+.red {
+    color : #f00;
+}
+
+.purple {
+    color : #b71ed7;
+}
+
+.first {
+    color : #b2bac2;
+    font-size : 16px;
+    /* margin-top : 100px; */
+    padding-top: 10px;
+    margin-left : 40px;
+}
+
+.second a {
+    font-size : 20px;
+    color : #2e3135;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.second a:hover{
+    text-decoration: underline;
+}
+
+.second {
+    padding-top: 20px;
+    margin-left : 40px
+}
+
+.third {
+    vertical-align: middle;
+    padding-top: 20px;
+    margin-left : 40px;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    width : 45px;
+    height : 20px;
+    float: left;
+    border : 1px solid #ccc;
+    padding: 5px;
+}
+
+.f {
+    vertical-align: 4px;;
+}
+
+.q {
+    vertical-align: 1px;
+}
+
+li:hover{
+    background-color: #eee;
+}
+
+.right {
+    border-radius: 10px;
+    position : absolute;
+    right : 80px;
+    top : 10px;
+}

@@ -1,0 +1,164 @@
+@charset 'utf-8';
+@import './reset.css';
+/* @media 媒体查询 */
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('./font/');
+    src: url('./font/?#iefix') format('embedded-opentype'),
+        url('./font/iconfont.woff2') format('woff2'),
+        url('./font/iconfont.woff') format('woff'),
+        url('./font/iconfont.ttf') format('truetype'),
+        url('./font/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 10px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#topMenu {
+    border-bottom: 1px solid #ccc;
+    height : 40px;
+}
+
+.topMenuContent {
+    margin : 0 auto;
+    width : 1200px;
+    height :40px;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    line-height: 40px;
+}
+
+/*顶部菜单栏*/
+.topLeftMemu {
+    display: flex;
+    /* align-self: flex-start; */
+    /* width : 500px */
+    position : relative;
+}
+
+.topRightMemu {
+    display: flex;
+    /* align-self: flex-end; */
+    position : relative;
+}
+
+#topMenu li {
+    margin-right : 10px;
+    height : 40px;
+    padding : 1px;
+    /* border : 1px solid #ccc; */
+}
+
+/* 悬停部分 */
+#topMenu li:hover a {
+    color : #f40;
+}
+
+#topMenu li.slide.active {
+    border : 1px solid #ddd;
+    padding : 0;
+    border-bottom: 1px solid #fff;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.slideDown {
+    position : absolute;
+    /* width : 100px;
+    height : 100px;
+    background-color: red; */
+    background-color: #fff;
+    top : 40px;
+    left : 0;
+    width : 230px;
+    height : 280px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: none;
+}
+
+#topMenu .slideDownFirstChild li {
+    display: block;
+    padding-left : 20px;
+    cursor: pointer;
+}
+
+.slideDownFirstChild li:hover {
+    background-color: #ddd;
+}
+
+.slideDownSecondChild {
+    top: 40px;
+    left : 0;
+    width : 75px;
+    height : 80px;
+}
+
+.topShow {
+    background-color: #fff;
+    border : 1px solid #ddd;
+    border-top : none;
+    display: none;
+}
+
+#topMenu .slideChild li {
+    display: block;
+    margin-right : 0;
+}
+
+.slideChild li:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.slideDownThirdChild {
+    width : 215px;
+    height : 50px;
+    top: 40px;
+    left : 77px;
+    line-height: 50px;
+    padding : 0 0px 0 10px;
+}
+
+.slideDownThirdChild .link {
+    color : #fff;
+    background-color: #f40;
+    display: inline-block;
+    line-height: 30px;
+    height: 30px;
+    font-size: 13px;
+    font-weight: bold;
+    padding : 0 3px;
+    cursor: pointer;
+}
+
+.slideDownForthChild {
+    top : 40px;
+    left : 167px;
+    width : 70px;
+    text-align: center;
+}
+
+.slideDownFifthChild {
+    top : 40px;
+    left : 328px;
+    width : 87.56px;
+}
+
+#topMenu .slideDownFifthChild li {
+    padding-left: 5px;
+}
+
+.sildeDownSixthChild {
+    top : 40px;
+    left : 429px;
+    width : 66px;
+}

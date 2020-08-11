@@ -1,0 +1,38 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-size : 12px;
+    color : #6c6c6c;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.c5 {
+    color : #f40;
+}
+
+.weight {
+    font-weight : bold;
+}
+
+.abpo {
+    position : absolute;
+}
+

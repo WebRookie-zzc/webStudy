@@ -1,0 +1,134 @@
+* {
+    margin:0;
+    padding : 0;
+}
+
+html,body {
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size : 0;
+}
+
+li {
+    display: inline-block;
+    margin : 0 5px 24px 5px;
+}
+
+.video-list {
+    width : 864px;
+    height : 404px;
+}
+
+.video {
+    width : 206px;
+}
+
+.poster {
+    width : 100%;
+    height : 116px;
+    position : relative;
+}
+
+.poster img {
+    width : 100%;
+    height : 100%;
+}
+
+.video-info {
+    font-size : 14px;
+    color : #fff;
+    position : absolute;
+    bottom : 0;
+    padding : 20px 0 10px 5px;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.7));
+    width : 100%;
+}
+
+.play,
+.likes {
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding-left: 22px;
+    padding-right : 10px;
+    background-position-y: center;
+    /* cursor: pointer; */
+}
+
+.play {
+    background-image: url(./img/play.png);
+}
+
+.likes {
+    background-image: url(./img/likes.png);
+}
+
+.title {
+    display : -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size : 14px;
+    margin-top : 10px;
+    height : 40px;
+}
+
+.up {
+    margin-top : 10px;
+    color : #999;
+    font-size : 12px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.mask {
+    position : absolute;
+    display: none;
+    width : 100%;
+    height : 100%;
+    top: 0;
+    left : 0;
+    background-size: 2060px;
+    cursor: pointer;
+    /* background-image: url(./img/120297496.jpg); */
+}
+
+.line {
+    position : relative;
+    width : 100%;
+    height : 10px;
+    background-color : #000;
+}
+
+.top,
+.bottom {
+    position : absolute;
+    left : 5px;
+    width : 196px;
+    height : 2px;
+    top: 50%;
+    background-color: #999;
+}
+
+.top {
+    width : 0;
+    background-color: #fff;
+}
+
+.poster:hover .mask {
+    display: block;
+}

@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'iconfont';  /* project id 1975382 */
+    src: url('//at.alicdn.com/t/font_1975382_urtt4wd37b.eot');
+    src: url('//at.alicdn.com/t/font_1975382_urtt4wd37b.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1975382_urtt4wd37b.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1975382_urtt4wd37b.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1975382_urtt4wd37b.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1975382_urtt4wd37b.svg#iconfont') format('svg');
+  }
+
+* {
+    margin : 0;
+    padding : 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.user-wrapper {
+    margin : 250px auto;
+    width : 1050px;
+    height : 160px;
+    position : relative;
+}
+
+.slide-btn {
+    position : absolute;
+    width : 25px;
+    height : 75px;
+    background-color: #f4f5f7;
+    font-family: 'iconfont';
+    line-height : 75px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.left {
+    top : 10px;
+    left : 0;
+}
+
+.right {
+    top : 10px;
+    right : 0px;
+}
+
+.user-list {
+    width : 1000px;
+    position : absolute;
+    left : 25px;
+    overflow: hidden;
+    height : 155px;
+    position: relative;
+}
+
+.iner-list {
+    width : 3000px;
+    height : 100%;
+    transition: .7s;
+    position: relative;
+    
+}
+
+.user {
+    width : 130px;
+    height: 100%;
+    margin : 0 6.428571428571431px;
+    float: left;
+    text-align: center;
+}
+
+img {
+    text-align: center;
+    border-radius: 50%;
+    width : 64px;
+    height : 64px;
+}
+
+.user p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.user span {
+    cursor: pointer;
+    background-color: #00f;
+    padding : 3px 10px;
+    margin-top : 10px;
+    color : #fff;
+    border-radius: 10px;
+    font-family: "华文行楷";
+    font-size: 14px;
+}
+
+.users {
+    font-size : 0;
+}

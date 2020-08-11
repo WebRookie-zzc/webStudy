@@ -1,0 +1,92 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+/*整个框架*/
+#bannder {
+    width : 830px;
+    height : 482px;
+    border : 1px solid center;
+    font-size : 0;
+    margin : 10px auto;
+    position : relative;
+}
+/*链接小点*/
+ul {
+    list-style: none;
+}
+
+li {
+    /* display: none; */
+}
+
+li.active {
+    /* display: block; */
+}
+
+.circle {
+    position : absolute;
+    bottom : 30px;
+    text-align : center;
+    height : 30px;
+    width : 100%;
+}
+
+.circle span {
+    display: inline-block;
+    font-size : 0;
+    margin : 0 12px;
+    width : 20px;
+    height : 20px;
+    text-align : center;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle span.active {
+    background-color: #f40;
+}
+
+/*左右侧按钮*/
+
+.leftBtn, .rightBtn {
+    width : 30px;
+    height : 64px;
+    position : absolute;
+    top : 50%;
+    margin-top : -32px; 
+    /* background-color: #000; */
+    background-image: url('./images/index.png');
+    background-position: -82px -145px;
+    cursor: pointer;
+}
+
+.rightBtn {
+    right : 0;
+    background-image: url('./images/index.png');
+    background-position: -120px -145px;
+}
+
+.leftBtn:hover {
+    background-position: -161px -145px;
+}
+
+.rightBtn:hover {
+    background-position : -198px -145px;
+}
+
+/*切换页数时的动画效果*/
+
+li {
+    opacity: 0;
+    transition: 1s;
+    position : absolute;
+    left : 0;
+    top: 0px;
+}
+
+li.active {
+    opacity: 1;
+}
+

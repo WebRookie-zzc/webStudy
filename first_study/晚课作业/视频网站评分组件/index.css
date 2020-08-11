@@ -1,0 +1,28 @@
+.starsContainer {
+    display: inline-block;
+
+}
+
+.starsContainer span {
+    float: left;
+    width : 18px;
+    height : 18px;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.all label {
+    vertical-align: 2px;
+    font-size : 18px;
+    font-family: "楷体";
+    font-weight: bold;
+    color : #f00;
+}
+
+.fill {
+    background-image: url(./img/star_onmouseover.png);
+}
+
+.hollow {
+    background-image: url(./img/star_hollow_hover.png);
+}

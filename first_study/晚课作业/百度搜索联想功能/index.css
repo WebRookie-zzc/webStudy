@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width : 600px;
+    margin : 0 auto;
+    margin-top: 100px;
+}
+
+.search-container,
+button {
+    float: left;
+}
+
+.search-container {
+    width : 492px;
+    border : 2px solid #999;
+    border-right : none;
+    height : 44px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+
+button {
+    width : 108px;
+    height : 44px;
+    border : none;
+    outline: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #4e6ef2;
+    color : #fff;
+    font-size: 16px;
+    line-height: 44px;
+    /* font-weight: 400; */
+}
+
+.search-container input {
+    width : 100%;
+    height : 40px;
+    border: none;
+    outline : none;
+    padding-left: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.search-container.foucs {
+    border-color : #4e6ef2;
+}
+
+.tips {
+    overflow: visible;
+    height: auto;
+    border-right : 2px solid #4e6ef2;
+    border-bottom-right-radius: 10px;
+}
+
+.tips ul {
+    border-top : 2px solid #bbb;
+    margin-top : 0;
+    margin-left : 20px;
+    padding-left: 5px;
+    width : 448px;
+    padding-top : 16px;
+    list-style: none;
+}
+
+.tips ul li {
+    font-size : 16px;
+    line-height: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tips ul li:hover {
+    color : #4e6ef2;
+}

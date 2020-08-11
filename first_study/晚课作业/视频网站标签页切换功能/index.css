@@ -1,0 +1,77 @@
+* {
+    margin : 0px;
+    padding : 0px;
+    font-family: "楷体";
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+body {
+    padding-top : 10px;
+}
+
+.wrapper {
+    width : 800px;
+    height: 600px;
+    border : 2px solid #000;
+    margin-left : 10px;
+}
+
+.main {
+    height: 100%;
+    width : 500px;
+    /* border : 1px solid #000; */
+    background-image: url(./data/logo.webp);
+    background-position-x: center;
+    background-position-y : center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    width : 300px;
+    height : 602px;
+    position : absolute;
+    left : 512px;
+    top : 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* color : #fff; */
+    font-size : 0px;
+    overflow: hidden;
+    
+}
+
+.nav span {
+    font-size : 16px;
+}
+
+h2 {
+    font-size : 26px;
+    margin-top : 10px;
+    margin-left : 20px;
+    font-family : '楷体';
+}
+
+li {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    margin-left : 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li.active {
+    font-size : 12px;
+    color : #f40;
+}
+
+li.active span {
+    font-size : 26px;
+}
+
