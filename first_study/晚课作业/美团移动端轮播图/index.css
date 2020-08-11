@@ -1,0 +1,37 @@
+* {
+    margin : 0;
+    padding : 0;
+}
+
+.wrapper {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.slide {
+    display: flex;
+    flex-wrap: nowrap;
+    width : 1000vw;
+}
+
+img {
+    width : 100vw;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    position : relative;
+    bottom : 3vw;
+}
+
+.line span {
+    background-color: rgba(255,255,255,.5);
+    width : 30px;
+    height: 5px;
+    margin : 0 3px;
+}
+
+.line span.active {
+    background-color: rgba(255,255,255,1);
+}
