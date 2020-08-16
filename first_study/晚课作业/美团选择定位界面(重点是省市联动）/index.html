@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>美团定位选择界面</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- 头部 -->
+    <div class="head">
+        <div class="head-main">
+            <img src="./img/logo .png">
+            <div class="input-search">
+                <input type="text" class="all-input-search" placeholder="搜索商家或地点">
+                <span class="search-btn iconfont">
+                    &#xe652;
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 主要部分 -->
+    <div class="wrapper">
+        <!-- 头部信息 -->
+        <!-- 顶部选择框和搜索框 -->
+        <div class="select">
+            <h3 class="title">按省份选择：</h3>
+            <div class="divProvince">
+                <span class="inInput">省份</span>
+                <span class="down iconfont">&#xe611;</span>
+                <!-- 下拉的省份菜单 -->
+                <div class="provinceWap">
+                    <ul class="provinceLists"></ul>
+                </div>
+            </div>
+            <div class="divCity not-allow">
+                <span class="inInput">城市</span>
+                <span class="down iconfont">&#xe611;</span>
+                <!-- 下拉的城市菜单 -->
+                <div class="cityWap">
+                    <ul class="cityLists"></ul>
+                </div>
+            </div>
+            <h3 class="title">直接搜索：</h3>
+            <div class="divCity search">
+                <input type="text" placeholder="请输入城市的中文或拼音" class="search-city">
+                <div class="faker-search">衡水</div>
+            </div>
+        </div>
+        <hr>
+        <!-- 热门城市 -->
+        <div class="hot">
+            <h3 class="title">热门城市：</h3>
+            <ul class="hot-recent-ul">
+                <li class="hot-recent-item">北京</li>
+                <li class="hot-recent-item">上海</li>
+                <li class="hot-recent-item">广州</li>
+                <li class="hot-recent-item">深圳</li>
+                <li class="hot-recent-item">天津</li>
+                <li class="hot-recent-item">西安</li>
+                <li class="hot-recent-item">重庆</li>
+                <li class="hot-recent-item">杭州</li>
+                <li class="hot-recent-item">南京</li>
+                <li class="hot-recent-item">武汉</li>
+                <li class="hot-recent-item">成都</li>
+            </ul>
+        </div>
+        <hr>
+        <!-- 最近访问 -->
+        <div class="resent">
+            <h3 class="title">最近访问：</h3>
+            <ul class="hot-recent-ul">
+                <li class="hot-recent-item">衡水</li>
+                <li class="hot-recent-item">南昌</li>
+            </ul>
+        </div>
+        <hr>
+        <!-- 字母索引 -->
+        <div class="select-letter">
+            <h3 class="title">按拼音首字母选择：</h3>
+            <ul class="select-letter-ul">
+                <i class="select-letter-item"><a href="#lableA">A</a></i>
+                <i class="select-letter-item"><a href="#lableB">B</a></i>
+                <i class="select-letter-item"><a href="#lableC">C</a></i>
+                <i class="select-letter-item"><a href="#lableD">D</a></i>
+                <i class="select-letter-item"><a href="#lableE">E</a></i>
+                <i class="select-letter-item"><a href="#lableF">F</a></i>
+                <i class="select-letter-item"><a href="#lableG">G</a></i>
+                <i class="select-letter-item"><a href="#lableH">H</a></i>
+                <i class="select-letter-item"><a href="#lableJ">J</a></i>
+                <i class="select-letter-item"><a href="#lableK">K</a></i>
+                <i class="select-letter-item"><a href="#lableL">L</a></i>
+                <i class="select-letter-item"><a href="#lableM">M</a></i>
+                <i class="select-letter-item"><a href="#lableN">N</a></i>
+                <i class="select-letter-item"><a href="#lableP">P</a></i>
+                <i class="select-letter-item"><a href="#lableQ">Q</a></i>
+                <i class="select-letter-item"><a href="#lableR">R</a></i>
+                <i class="select-letter-item"><a href="#lableS">S</a></i>
+                <i class="select-letter-item"><a href="#lableT">T</a></i>
+                <i class="select-letter-item"><a href="#lableW">W</a></i>
+                <i class="select-letter-item"><a href="#lableX">X</a></i>
+                <i class="select-letter-item"><a href="#lableY">Y</a></i>
+                <i class="select-letter-item"><a href="#lableZ">Z</a></i>
+            </ul>
+        </div>
+        <!-- 字典内容 -->
+        <div class="dic"></div>
+    </div>
+    <script src="../../JS/jQuery/jquery-3.5.1.js"></script>
+    <script src="./js/linkage.js"></script>
+    <script src="./js/dic.js"></script>
+    <script src="./js/fakeSearch.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

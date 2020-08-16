@@ -1,0 +1,45 @@
+@import './linkage.css';
+@import './head.css';
+@import './hot-recent.css';
+@import './dictionary.css';
+
+@font-face {
+    font-family: 'iconfont';  /* project id 2003127 */
+    src: url('http://at.alicdn.com/t/font_2003127_6r5hfttqfs3.eot');
+    src: url('http://at.alicdn.com/t/font_2003127_6r5hfttqfs3.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_2003127_6r5hfttqfs3.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_2003127_6r5hfttqfs3.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_2003127_6r5hfttqfs3.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_2003127_6r5hfttqfs3.svg#iconfont') format('svg');
+  }
+
+/* reset */
+
+*{
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    background-color: #fdfdfd;
+}
+
+hr {
+    height: 1px;
+    color : #ccc;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    outline : none;
+    border : none;
+}
+
+a {
+    text-decoration: none;
+    font-style: normal ;
+    color : #545455;
+}

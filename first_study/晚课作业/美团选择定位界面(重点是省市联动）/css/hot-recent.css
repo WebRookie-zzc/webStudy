@@ -1,0 +1,40 @@
+.hot,
+.resent,
+.select-letter {
+    padding : 30px 0;
+    position : relative;
+}
+
+.hot-recent-ul,
+.select-letter-ul {
+    position : absolute;
+    left : 100px;
+    top : 40px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.hot-recent-item {
+    margin : 0 20px;
+    cursor: pointer;
+}
+
+.select-letter-ul {
+    left : 150px;
+}
+
+.select-letter-item {
+    margin : 0 10px;
+    display: inline-block;
+    padding : 3px;
+    border-radius: 50%;
+    font-size : 14px;
+    width : 14px;
+    height : 14px;
+    text-align : center;
+    line-height: 14px;
+}
+
+.select-letter-item:hover {
+    background-color: #ccc;
+}
