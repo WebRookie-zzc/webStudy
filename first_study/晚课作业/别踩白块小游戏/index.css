@@ -1,0 +1,98 @@
+@import '../../CSS/reset.css';
+
+body {
+    background-color: #eee;
+    text-align : center;
+}
+
+#game {
+    width : 400px;
+    height: 600px;
+    border : 1px solid #222;
+    margin : 30px auto;
+    background-color : #fff;
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width : 100%;
+    height : 100%;
+    top : -150px;
+}
+
+.start {
+    height: 100px;
+    text-align : center;
+    font-size : 60px;
+    line-height : 100px;
+    color : aqua;
+    border-bottom: 2px dashed #eee;
+    cursor : pointer;
+    position : absolute;
+    width : 100%;
+    left :0;
+    top : 150px
+    /* display: none; */
+}
+
+.row{
+    width : 100%;
+    height : 150px;
+} 
+
+ .row div {
+    border : 1px solid #222;
+    box-sizing: border-box;
+    width : 25%;
+    height: 150px;
+    margin : 0;
+    float: left;
+}
+
+.score {
+    background-color : #f40;
+    width : 150px;
+    margin : 10px auto;
+    font-size : 20px;
+    color : #fff;
+    font-weight : bolder;
+    text-align : center;
+}
+
+.mask {
+    background-color : rgba(0,0,0,.7);
+    width : 100%;
+    height : 100%;
+    position : absolute;
+    left : 0;
+    top : 0;
+    display: none;
+}
+
+h3 {
+    color : #f00;
+    margin-top : 200px;
+    text-align : center;
+    font-size : 60px;
+    font-weight :bolder;
+    font-family: "楷体";
+}
+
+p {
+    color : #ffc300;
+    font-size : 30px;
+    text-align : center;
+    font-family: "楷体";
+    font-weight: bold;
+}
+
+.restart {
+    margin-top : 100px;
+    width : 150px;
+    display: inline-block;
+    font-size : 20px;
+    border : none;
+    outline: none;
+    font-family: "楷体";
+}

@@ -1,0 +1,22 @@
+@import '../../CSS/reset.css';
+
+.wrapper {
+    position : absolute;
+    left : 0;
+    right : 0;
+    bottom : 0;
+    top : 0;
+    background-color : #4a96ee;
+    overflow: hidden;
+}
+
+.sheep{
+    position: absolute;
+    width: 164px;
+    height: 122px;
+    background:url(./img/sheep.png)  no-repeat ;
+    background-position: 0 0 ;
+    right: -164px;
+    bottom: 0;
+    cursor: -webkit-grabbing;
+}
