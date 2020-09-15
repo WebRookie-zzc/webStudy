@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../../CSS/reset.css" />
+    <style>
+      .wrapper {
+        margin: 20px auto;
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .surface {
+        display: flex;
+        border: 2px solid #000;
+        border-radius: 20px;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+      /* 一点 */
+      .one {
+        justify-content: center;
+        align-items: center;
+      }
+
+      .one-red {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #f00;
+      }
+      /* 两点 */
+      .two {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .two-black {
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        margin: 10px;
+      }
+      /* 三点 */
+      .three {
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .three-black {
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        margin: 6px;
+      }
+      .three-black:nth-of-type(1) {
+        align-self: flex-start;
+      }
+      .three-black:nth-of-type(2) {
+        align-self: center;
+      }
+      .three-black:nth-of-type(3) {
+        align-self: flex-end;
+      }
+      /* 四点 */
+      .four {
+        box-sizing: border-box;
+        width: 104px;
+        height: 104px;
+        padding: 11px;
+        flex-wrap: wrap;
+      }
+      .four-red {
+        width: 20px;
+        height: 20px;
+        background-color: #f00;
+        border-radius: 50%;
+        flex-wrap: wrap;
+        margin: 9px;
+      }
+      /* 五点 */
+      .five {
+        box-sizing: border-box;
+        width: 104px;
+        height: 104px;
+      }
+
+      .five {
+        box-sizing: border-box;
+        width: 104px;
+        height: 104px;
+        padding: 5px;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+      }
+
+      .five-black {
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50%;
+        margin: 5px;
+      }
+
+      .five-black:nth-of-type(3){
+        margin:0 30px 0 30px;
+      }
+      /* 六点 */
+      .six {
+        box-sizing: border-box;
+        width: 104px;
+        height: 104px;
+        padding: 8px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .six-black {
+        width: 20px;
+        height: 20px;
+        background-color: #000;
+        border-radius: 50%;
+        margin: 5px;
+      }
+    </style>
+    <title>flex布局-骰子</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 一点 -->
+      <ul class="surface one">
+        <li class="one-red"></li>
+      </ul>
+      <!-- 两点 -->
+      <ul class="surface two">
+        <li class="two-black"></li>
+        <li class="two-black"></li>
+      </ul>
+      <!-- 三点 -->
+      <ul class="surface three">
+        <li class="three-black"></li>
+        <li class="three-black"></li>
+        <li class="three-black"></li>
+      </ul>
+      <!-- 四点 -->
+      <ul class="surface four">
+        <li class="four-red"></li>
+        <li class="four-red"></li>
+        <li class="four-red"></li>
+        <li class="four-red"></li>
+      </ul>
+      <!-- 五点 -->
+      <ul class="surface five">
+        <li class="five-black"></li>
+        <li class="five-black"></li>
+        <li class="five-black"></li>
+        <li class="five-black"></li>
+        <li class="five-black"></li>
+      </ul>
+      <!-- 六点 -->
+      <ul class="surface six">
+        <li class="six-black"></li>
+        <li class="six-black"></li>
+        <li class="six-black"></li>
+        <li class="six-black"></li>
+        <li class="six-black"></li>
+        <li class="six-black"></li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+@import '../../CSS/reset.css';
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+}
+
+html {
+  cursor: pointer;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin-right: 6px;
+  min-width: 45px;
+}
+
+.center {
+  position: fixed;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  font-size : 8em;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100%;
+}
+
+.djk {
+  transform: translate(0 )
+}

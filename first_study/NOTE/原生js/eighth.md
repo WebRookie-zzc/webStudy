@@ -229,7 +229,6 @@ arr.sort(function (a, b){
 });
 
 console.log(arr);
-}
 ```
 
 再来来看一个应用：按字符串的长度来排序字符串数组

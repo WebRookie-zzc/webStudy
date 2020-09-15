@@ -1,0 +1,30 @@
+@media (min-width : 1200px){
+  .col-xl-10-2{
+    flex: 0 0 20%;
+  }
+}
+
+.logo {
+  width : 133px;
+  height: 69px;
+  background: url(./img/1.webp);
+  display: inline-block;
+}
+
+span {
+  vertical-align: 25px;
+}
+
+.carousel-item img {
+  max-height : 600px;
+}
+
+ol {
+  height : 50px;
+  display: flex;
+  background-color : rgba(0,0,0,.005);
+  align-items: center;
+  position : absolute;
+  bottom : -10px;
+}
+
