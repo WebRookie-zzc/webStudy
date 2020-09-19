@@ -1,0 +1,48 @@
+@import './reset.css';
+@import './first-page.css';
+
+/* 顶部导航栏 */
+
+.top-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-width: 1000px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000090;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+
+.top-nav-logo img{
+    width: 150px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.top-nav-back {
+    color: #fff;
+    font-size: 20px;
+}
+
+.show-pages {
+    position: fixed;
+    right: 10px;
+}
+
+/* 第一屏 */
+
+.first-page {
+    background-image: url(../img/big_srar.jpg);
+    width: 100vw;
+    min-width: 1000px;
+    height: 100vh;
+    min-height: 650px;
+    background-repeat: no-repeat;
+    
+}
