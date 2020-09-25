@@ -1,0 +1,20 @@
+/* 第一屏 */
+
+.first-page {
+  background-image: url(../img/big_srar.jpg);
+  width: 100vw;
+  min-width: 1000px;
+  height: 100vh;
+  min-height: 650px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moble {
+  background-image: url(../img/phone.png);
+  width: 800px;
+  height: 400px;
+}
+

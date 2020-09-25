@@ -1,6 +1,16 @@
 @import './reset.css';
 @import './first-page.css';
 
+@font-face {
+    font-family: 'iconfont';  /* project id 2007795 */
+    src: url('http://at.alicdn.com/t/font_2007795_0m85hghne4.eot');
+    src: url('http://at.alicdn.com/t/font_2007795_0m85hghne4.eot?#iefix') format('embedded-opentype'),
+    url('http://at.alicdn.com/t/font_2007795_0m85hghne4.woff2') format('woff2'),
+    url('http://at.alicdn.com/t/font_2007795_0m85hghne4.woff') format('woff'),
+    url('http://at.alicdn.com/t/font_2007795_0m85hghne4.ttf') format('truetype'),
+    url('http://at.alicdn.com/t/font_2007795_0m85hghne4.svg#iconfont') format('svg');
+}
+
 /* 顶部导航栏 */
 
 .top-nav {
@@ -8,7 +18,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    min-width: 1000px;
+    min-width: 1500px;
     height: 50px;
     line-height: 50px;
     display: flex;
@@ -17,6 +27,7 @@
     padding-left: 100px;
     padding-right: 100px;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 .top-nav-logo img{
@@ -32,17 +43,75 @@
 
 .show-pages {
     position: fixed;
-    right: 10px;
+    right: 50px;
+    z-index: 10;
+    top: 40vh;
 }
 
-/* 第一屏 */
+.show-pages li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #aaa;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+}
 
-.first-page {
-    background-image: url(../img/big_srar.jpg);
+.flow-click-items {
+    position: fixed;
+    z-index: 10;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 120px;
+    border-radius: 5px;
+    background-color: #fff;
+    top: 60vh;
+    overflow: hidden;
+}
+
+.top-moble,
+.back-sqr {
+    display: block;
+    font-family: 'iconfont';
+    color: #87ceeb;
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+}
+
+.top-moble:hover,
+.back-sqr:hover {
+    background-color: #87ceeb;
+    color: #fff;
+}
+
+.hover-show-sqr {
+    display: none;
+    width: 290px;
+    height: 182px;
+    background-image: url(../img/hover-show-sqr.png);
+    background-size: cover;
+    position: fixed;
+    z-index: 10;
+    right: 90px;
+    top: 61vh
+}
+
+/* 主体包裹层 */
+.all-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100vw;
-    min-width: 1000px;
     height: 100vh;
-    min-height: 650px;
-    background-repeat: no-repeat;
+  }
     
+.inner-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 }
